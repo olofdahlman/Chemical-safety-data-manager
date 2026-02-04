@@ -1,5 +1,6 @@
 #Contains code for automatically generating a decently formatted docx document with selected chemicals
 #The functions in here are not meant to edit/add new chemicals to the JSON, only read from it
+#Use a monospaced typeset to avoid the issues with different letters taking different space and then simply count characters - https://en.wikipedia.org/wiki/List_of_monospaced_typefaces
 
 from docx import Document       #main functions to allow docx creation
 from docx.shared import Cm      #subfunction for length - here Cm imported allows for specifying document lengths in centimeters - Inches for inches
